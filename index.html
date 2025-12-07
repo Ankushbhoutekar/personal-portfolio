@@ -19,34 +19,32 @@
 <body class="bg-slate-950 text-white">
 
 <!-- ✅ NAVBAR -->
-<nav class="fixed w-full bg-slate-950/90 backdrop-blur border-b border-slate-800 z-50">
-  <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+<!-- ✅ FIXED RESPONSIVE NAVBAR -->
+<nav class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+
+    <!-- LOGO + NAME -->
     <div class="flex items-center gap-2">
-  <img 
-  src="assets\ankush-new-port.png" 
-  alt="Ankush Logo" 
-  class="w-14 h-14"
-
-/>
-
-  <span class="font-bold tracking-wide text-white">Ankush.dev</span>
+      <img src="assets\ankush-new-port.png" class="w-9 h-9 md:w-10 md:h-10 object-contain" />
+      <span class="text-white font-bold text-lg">Ankush.dev</span>
     </div>
 
-    <div class="flex gap-4 text-sm">
-      <a href="#about" class="hover:text-cyan-400">About</a>
-      <a href="#projects" class="hover:text-cyan-400">Projects</a>
-      <a href="#skills" class="hover:text-cyan-400">Skills</a>
-      <a href="#contact" class="hover:text-cyan-400">Contact</a>
-      <a href="#resume" class="hover:text-cyan-400">Resume</a>
-      <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="hover:text-cyan-400">GitHub</a>
-
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex gap-8 text-sm text-gray-300">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume">Resume</a>
     </div>
+
   </div>
 </nav>
 
+
 <!-- ✅ HERO -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 relative overflow-hidden">
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 relative overflow-hidden">
+
 
   <!-- ✅ Background Glow -->
   <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
