@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ankush | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="icon" type="image/png" href="assets\ankush-new-port.png">
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-slate-950 text-white">
+
+<!-- ✅ NAVBAR -->
+<nav class="fixed w-full bg-slate-950/90 backdrop-blur border-b border-slate-800 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+  <img 
+  src="assets\ankush-new-port.png" 
+  alt="Ankush Logo" 
+  class="w-14 h-14"
+
+/>
+
+  <span class="font-bold tracking-wide text-white">Ankush.dev</span>
+    </div>
+
+    <div class="flex gap-4 text-sm">
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+      <a href="#resume" class="hover:text-cyan-400">Resume</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="hover:text-cyan-400">GitHub</a>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 relative overflow-hidden">
+
+  <!-- ✅ Background Glow -->
+  <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
+
+  <!-- ✅ Floating Gradient Blobs -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-20 right-10 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+  <!-- ✅ Main Content -->
+  <div class="animate-fade max-w-3xl">
+
+    <p class="text-cyan-400 tracking-widest uppercase text-sm mb-3">
+      Full Stack Developer • AI Enthusiast
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+      Hi, I'm <span class="text-cyan-400">Ankush</span>
+    </h1>
+
+    <p class="text-gray-300 mb-8 text-lg">
+      I build modern web apps, real-time systems & AI-powered tools with clean UI & scalable backend.
+    </p>
+
+    <!-- ✅ Action Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <a href="#projects" class="bg-cyan-500 text-black px-6 py-3 rounded-full font-medium hover:bg-cyan-400 transition">
+        🚀 View Projects
+      </a>
+
+      <a href="#contact" class="border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:text-cyan-400 transition">
+        📩 Hire Me
+      </a>
+    </div>
+
+    <!-- ✅ Quick Stats -->
+    <div class="grid grid-cols-3 gap-6 text-center mt-10">
+      <div>
+        <h3 class="text-2xl font-bold text-cyan-400">5+</h3>
+        <p class="text-sm text-gray-400">Projects</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-cyan-400">Fresher</h3>
+        <p class="text-sm text-gray-400">Year Experience</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-cyan-400">100%</h3>
+        <p class="text-sm text-gray-400">Passion</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ✅ ABOUT -->
+<section id="about" class="py-20 max-w-6xl mx-auto px-4">
+  <h2 class="text-3xl font-bold mb-10 text-center">About Me</h2>
+
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- ✅ Left: Image -->
+    <div class="flex justify-center">
+      <img 
+        src="assets/me.jpg" 
+        alt="Ankush Profile Photo" 
+        class="w-64 h-64 object-cover rounded-2xl shadow-lg border border-slate-700"
+      />
+    </div>
+
+    <!-- ✅ Right: Content -->
+    <div class="text-gray-300 leading-relaxed space-y-4">
+
+      <p>
+        Hi, I’m <span class="text-cyan-400 font-semibold">Ankush</span>, a passionate 
+        <b>Full Stack Developer & AI Enthusiast</b> currently pursuing B.Tech. Known for building
+        clean, scalable and real-time web applications with modern UI.
+      </p>
+
+      <p>
+        I enjoy solving real-world problems using 
+        <b>JavaScript, Node.js, Socket.io, AI APIs</b>, and working on real-time systems, 
+        automation tools and intelligent applications.
+      </p>
+
+      <p>
+        I aspire to work with a product-driven team where I can build impactful software, learn from experienced engineers, and grow as a professional developer.
+      </p>
+
+      <!-- ✅ Highlight Points -->
+      <ul class="grid grid-cols-2 gap-3 text-sm mt-4">
+        <li> Full Stack Development</li>
+        <!-- <li> Real-Time Systems</li> -->
+        <li> AI Integration</li>
+        <li> Clean UI/UX</li>
+        <li> API Development</li>
+        <li> Problem Solving</li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+  <div class="border border-slate-800 p-4 rounded">
+    <h3 class="text-cyan-400 text-xl font-bold">5+</h3>
+    <p class="text-sm text-gray-400">Projects</p>
+  </div>
+  <div class="border border-slate-800 p-4 rounded">
+    <h3 class="text-cyan-400 text-xl font-bold">Fresher</h3>
+    <p class="text-sm text-gray-400">Year Experience</p>
+  </div>
+  <div class="border border-slate-800 p-4 rounded">
+    <h3 class="text-cyan-400 text-xl font-bold">10+</h3>
+    <p class="text-sm text-gray-400">Technologies</p>
+  </div>
+  <div class="border border-slate-800 p-4 rounded">
+    <h3 class="text-cyan-400 text-xl font-bold">100%</h3>
+    <p class="text-sm text-gray-400">Dedication</p>
+  </div>
+</div>
+
+</section>
+
+
+<!-- ✅ PROJECTS -->
+<section id="projects" class="py-16 max-w-5xl mx-auto px-4">
+  <h2 class="text-2xl font-bold mb-6">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="border border-slate-800 p-4 rounded hover:border-cyan-400 transition">
+      <h3 class="font-semibold">Personal Portfolio Website</h3>
+      <p class="text-sm text-gray-400">HTML, Tailwind CSS, JavaScript, EmailJS</p>
+    </div>
+
+    <div class="border border-slate-800 p-4 rounded hover:border-cyan-400 transition">
+      <h3 class="font-semibold">AI Real-Time Chat App</h3>
+      <p class="text-sm text-gray-400">Node.js, Socket.io, AI API</p>
+    </div>
+
+    <div class="border border-slate-800 p-4 rounded hover:border-cyan-400 transition">
+      <h3 class="font-semibold">ECM Document Viewer</h3>
+      <p class="text-sm text-gray-400">PDF.js, OCR, Cloudinary</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ resume -->
+<section id="resume" class="py-16 max-w-5xl mx-auto px-4 text-center">
+  <h2 class="text-2xl font-bold mb-6">Resume</h2>
+
+  <p class="text-gray-300 mb-6">
+    Download my updated resume to know more about my skills, projects, and experience.
+  </p>
+
+  <a 
+    href="assets\Ankush_SE.pdf" 
+    download
+    class="inline-block bg-cyan-500 text-black px-6 py-2 rounded-full font-medium hover:bg-cyan-400 transition"
+  >
+    Download Resume
+  </a>
+</section>
+
+
+<!-- ✅ linkedin-github -->
+<section class="py-16 max-w-5xl mx-auto px-4 text-center">
+  <h2 class="text-2xl font-bold mb-6">Connect With Me</h2>
+
+  <div class="flex justify-center gap-6">
+    <a 
+      href="https://www.linkedin.com/in/ankush-bhoutekar-648b06251/"
+      target="_blank"
+      class="border border-slate-700 px-6 py-2 rounded-full hover:border-cyan-400 hover:text-cyan-400 transition"
+    >
+      LinkedIn
+    </a>
+
+    <a 
+      href="https://github.com/ankushbhoutekar"
+      target="_blank"
+      class="border border-slate-700 px-6 py-2 rounded-full hover:border-cyan-400 hover:text-cyan-400 transition"
+    >
+      GitHub
+    </a>
+  </div>
+</section>
+
+
+
+<!-- ✅ SKILLS -->
+<section id="skills" class="py-16 max-w-5xl mx-auto px-4">
+  <h2 class="text-2xl font-bold mb-6">Skills</h2>
+
+  <div class="space-y-4">
+
+    <div>
+      <div class="flex justify-between text-sm mb-1">
+        <span>JavaScript</span>
+        <span>80%</span>
+      </div>
+      <div class="w-full bg-slate-800 h-2 rounded">
+        <div class="bg-cyan-400 h-2 w-[80%]"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between text-sm mb-1">
+        <span>HTML & CSS</span>
+        <span>85%</span>
+      </div>
+      <div class="w-full bg-slate-800 h-2 rounded">
+        <div class="bg-cyan-400 h-2 w-[85%]"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between text-sm mb-1">
+        <span>Node.js</span>
+        <span>70%</span>
+      </div>
+      <div class="w-full bg-slate-800 h-2 rounded">
+        <div class="bg-cyan-400 h-2 w-[70%]"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ CONTACT -->
+<section id="contact" class="py-16 max-w-5xl mx-auto px-4">
+  <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+
+  <form id="contact-form" class="space-y-4 max-w-md">
+    <input class="w-full p-2 bg-slate-900 border border-slate-700 rounded" type="text" name="user_name" placeholder="Name" required />
+    <input class="w-full p-2 bg-slate-900 border border-slate-700 rounded" type="email" name="user_email" placeholder="Email" required />
+    <textarea class="w-full p-2 bg-slate-900 border border-slate-700 rounded" name="message" placeholder="Message" required></textarea>
+
+    <button class="bg-cyan-500 text-black px-4 py-2 rounded-full" type="submit">
+      Send Message
+    </button>
+
+    <p id="status" class="text-sm"></p>
+  </form>
+</section>
+
+<!-- <footer class="text-center text-sm text-gray-400 py-6 border-t border-slate-800">
+  © 2025 Ankush Bhoutekar
+</footer> -->
+<footer class="text-center text-sm text-gray-400 py-6 border-t border-slate-800">
+  <p>© 2025 Ankush Bhoutekar</p>
+
+  <div class="flex justify-center gap-4 mt-2">
+    <a href="https://www.linkedin.com/in/ankush-bhoutekar-648b06251/" target="_blank" class="hover:text-cyan-400">
+      LinkedIn
+    </a>
+    <a href="https://github.com/ankushbhoutekar" target="_blank" class="hover:text-cyan-400">
+      GitHub
+    </a>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
